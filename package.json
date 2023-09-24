@@ -18,7 +18,8 @@
   "scripts": {
     "build-design-tokens": "build-design-tokens --source ./tokens/src --build-dir ./paragon/css --source-tokens-only --themes light dark edSPIRIT",
     "build-scss": "build-scss --corePath ./paragon/core.scss --themesPath ./paragon/css/themes --defaultThemeVariants light dark",
-    "build": "make build"
+    "build": "make build",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@edx/paragon": "21.0.0-alpha.40"
