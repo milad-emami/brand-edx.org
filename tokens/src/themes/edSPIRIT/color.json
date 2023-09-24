@@ -1,0 +1,66 @@
+{
+  "color": {
+    "blue": { "value": "#005070" },
+    "red": { "value": "#870A02" },
+    "green": { "value": "#0A633D" },
+    "yellow": { "value": "#A99200" },
+    "accent": {
+      "a": { "value": "#02A5B2" },
+      "b": { "value": "#C4A400" }
+    },
+    "primary": {
+      "base": { "value": "#001D23" },
+      "300": { "value": "#253D3F", "modify": null },
+      "400": { "value": "#0B2C2D", "modify": null },
+      "600": { "value": "#001C20", "modify": null },
+      "700": { "value": "#001919", "modify": null }
+    },
+    "brand": {
+      "base": { "value": "#A62820" },
+      "700": { "value": "#730D06", "modify": null }
+    },
+    "success": {
+      "100": { "value": "#C4E7D9", "modify": null },
+      "200": { "value": "#99CAB1", "modify": null },
+      "300": { "value": "#26845C", "modify": null },
+      "700": { "value": "#12492F", "modify": null },
+      "900": { "value": "#0C3D0C", "modify": null }
+    },
+    "info": {
+      "base": { "value": "{color.blue}" },
+      "100": { "value": "#C7E2EA", "modify": null },
+      "200": { "value": "#7DA8B9", "modify": null },
+      "300": { "value": "#166F9A", "modify": null },
+      "700": { "value": "#003B5A", "modify": null },
+      "900": { "value": "#00263A", "modify": null }
+    },
+    "warning": {
+      "100": { "value": "#FFD9B3", "modify": null },
+      "200": { "value": "#FFD260", "modify": null },
+      "300": { "value": "#C4A400", "modify": null },
+      "700": { "value": "#7A6600", "modify": null },
+      "900": { "value": "#625400", "modify": null }
+    },
+    "danger": {
+      "100": { "value": "#F2D9DB", "modify": null },
+      "200": { "value": "#E48F89", "modify": null },
+      "300": { "value": "#A02F27", "modify": null },
+      "700": { "value": "#75180F", "modify": null },
+      "900": { "value": "#560B05", "modify": null }
+    },
+    "light": {
+      "200": { "value": "#D9E1E1", "modify": null },
+      "300": { "value": "#C4C6C3", "modify": null },
+      "400": { "value": "#BAC2C1", "modify": null },
+      "700": { "value": "#ADA9A5", "modify": null }
+    },
+    "dark": {
+      "base": { "value": "#001D23" },
+      "200": { "value": "#384C52", "modify": null },
+      "300": { "value": "#253D3F", "modify": null },
+      "400": { "value": "#0B2C2D", "modify": null },
+      "600": { "value": "#001C20", "modify": null },
+      "700": { "value": "#001919", "modify": null }
+    }
+  }
+}
