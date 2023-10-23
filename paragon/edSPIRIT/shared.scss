@@ -1,0 +1,352 @@
+@import "shared/header.scss";
+@import "shared/footer.scss";
+@import "shared/user-course-card.scss";
+@import "shared/ad-card.scss";
+@import "shared/course-card.scss";
+@import "shared/similar-courses.scss";
+@import "shared/layout.scss";
+@import "shared/course-card-skeleton.scss";
+
+.custom-container {
+  width: 100%;
+  padding-right: 36px;
+  padding-left: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+}
+
+@media (max-width: 1280px) {
+  .custom-container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+//general rul
+.btn-brand {
+  color: $white;
+  &:hover {
+    background-color: $brand-600;
+  }
+  &:disabled {
+    color: $white;
+    &:hover {
+      background-color: $brand-500;
+    }
+  }
+}
+.btn-outline-brand {
+  background-color: $brand-100;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: unset;
+}
+p {
+  margin-top: unset;
+  margin-bottom: unset;
+}
+//search field
+.pgn__searchfield {
+  border-radius: 4px;
+}
+
+.has-focus {
+  box-shadow: 0px 0px 2px 3px $gray-200;
+}
+
+//
+.highlighted {
+  color: $brand-600;
+}
+.highlighted-banner {
+  color: $brand;
+}
+
+//
+.custom-link {
+  color: $primary-700;
+  display: inline;
+  padding: 0;
+  text-decoration: none;
+  text-transform: none;
+
+  &:hover {
+    color: #00688d;
+    text-decoration: none;
+  }
+}
+.view-all-btn {
+  border: unset;
+  color: $info-500;
+  font-size: $font-size-base-xl;
+  padding: 0;
+  &:hover {
+    background-color: unset;
+  }
+}
+
+.color-black {
+  color: black;
+}
+.color-danger-500 {
+  color: $danger-500;
+}
+.color-danger-900 {
+  color: $danger-900;
+}
+.font-sm {
+  font-size: $font-size-base-sm;
+}
+.font-xl {
+  font-size: $font-size-base-xl;
+}
+.font-xs {
+  font-size: $font-size-base-xs;
+}
+.transform-rtl {
+  .pgn__icon {
+    transform: unset !important;
+  }
+}
+.dropdown-wrapper,
+.avatar-dropdown-wrapper {
+  .dropdown-title {
+    font-size: $font-size-base-sm;
+  }
+  .btn {
+    height: 36px;
+  }
+  .btn-primary,
+  .btn-primary.dropdown-toggle {
+    background-color: unset;
+    border-color: $light-300;
+    &:hover {
+      border-color: $primary-500;
+    }
+    &:active {
+      background-color: unset;
+      border-color: $light-300;
+    }
+    &:focus {
+      &::before {
+        border: unset;
+      }
+    }
+  }
+  .btn-icon-before {
+    color: $light-500;
+  }
+  .btn-icon-after {
+    color: $primary-500;
+  }
+  .btn-outline-primary.dropdown-toggle {
+    background-color: unset;
+  }
+  .dropdown-toggle::after {
+    content: none;
+  }
+  .dropdown {
+    &:hover {
+      background-color: unset;
+    }
+  }
+  .dropdown-menu {
+    width: 100%;
+    // min-width: 7rem;
+    min-width: fit-content;
+  }
+  //in mobile view we have modal
+  @media (max-width: 768px) {
+    .dropdown-menu {
+      display: none;
+    }
+  }
+  .dropdown-item {
+    font-size: $font-size-base-xl;
+    padding: 0.375rem 1rem;
+    color: $gray-700;
+    &:active {
+      font-weight: 700;
+      background-color: unset;
+      color: $black;
+    }
+  }
+  .active {
+    font-weight: 700;
+    background-color: unset;
+    color: $black;
+  }
+}
+
+.pgn__breadcrumb {
+  .pgn__icon {
+    color: $primary-500;
+  }
+  .list-inline {
+    margin-bottom: unset;
+  }
+}
+@media (max-width: 768px) {
+  .pgn__breadcrumb {
+    font-size: $font-size-base-std;
+  }
+}
+
+.pgn__card {
+  border: 1px solid $light-400;
+  box-shadow: unset;
+  &:hover {
+    box-shadow: $card-box-shadow;
+  }
+}
+.dropdown-menu {
+  box-shadow: $box-shadow-custom;
+  border: unset;
+  padding: unset;
+  min-width: unset;
+}
+// change dropdown icon when it is open
+.show {
+  .btn-icon-after {
+    transform: scale(-1);
+    color: $gray-500;
+  }
+}
+//
+.pgn__dropdown {
+  .pgn__icon {
+    width: 20px;
+  }
+}
+.banner-desc {
+  @extend .text-light-300, .mb-4;
+  max-width: 728px;
+}
+.banner-link {
+  @extend .d-flex, .align-items-center;
+  color: $accent-a;
+  &:hover {
+    color: $accent-a;
+  }
+}
+
+.pagination-default {
+  .page-link {
+    color: $gray-700;
+    min-width: 44px;
+    min-height: 44px;
+    margin-right: 0.4rem;
+    font-weight: 500;
+  }
+}
+
+.arrow-forward-btn {
+  display: none;
+  width: 36px;
+  height: 36px;
+  color: $gray-500 !important;
+  border-radius: 4px;
+  border: 1px solid $light-300;
+  &:hover {
+    color: $gray-500 !important;
+    background-color: transparent !important;
+  }
+  .pgn__icon {
+    height: unset !important;
+    width: 20px !important;
+  }
+}
+.show-more-less-clickable {
+  color: $info-500;
+  text-decoration: none !important;
+}
+.program-instructors-wrapper {
+  max-width: 244px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  a {
+    &::after {
+      content: ", ";
+    }
+    &:last-child {
+      &::after {
+        content: "";
+      }
+    }
+  }
+}
+.share-icon {
+  cursor: pointer;
+  color: $gray-500;
+  opacity: 0.5;
+  transform: unset !important;
+}
+//remove scroll-x in modal
+.pgn__modal-body {
+  // padding: unset;
+  // overflow-x: hidden;
+  &::after {
+    content: unset;
+  }
+}
+.warning-icon {
+  color: $warning-300 !important;
+  opacity: unset;
+}
+.pgn__searchfield-form {
+  background-color: unset !important;
+}
+
+[dir="rtl"] {
+  .pgn__icon {
+    transform: scaleX(-1);
+  }
+  .social-container {
+    transform: scaleX(-1);
+    direction: initial;
+  }
+  .price-symbol-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    direction: initial;
+  }
+}
+
+.lang_fa {
+  * {
+    font-family: IRANSans !important ;
+  }
+}
+.lang_ar {
+  * {
+    font-family: NotoSansArabic !important ;
+  }
+}
+@media (max-width: 1024px) {
+  .program-instructors-wrapper {
+    max-width: 194px;
+  }
+}
+.text-decoration-underline {
+  text-decoration: underline;
+  text-decoration-color: $gray-700 !important;
+  text-underline-offset: 5px;
+  &:hover {
+    text-decoration: underline !important;
+  }
+}

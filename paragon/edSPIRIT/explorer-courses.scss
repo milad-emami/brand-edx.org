@@ -1,0 +1,120 @@
+.explore-courses-container {
+  background-color: $light-200;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.explorer-title {
+  justify-content: center;
+}
+.view-all-courses-btn {
+  width: 327px;
+  height: 44px;
+  color: $gray-500;
+  background-color: transparent;
+  border-color: $light-400;
+}
+.nav-tabs {
+  font-size: 14px;
+  border-bottom: unset;
+  justify-content: center;
+  margin-bottom: 48px;
+  .nav-link {
+    border-bottom: 2px solid #e9e6e4;
+    &:focus {
+      &::before {
+        border: unset !important;
+      }
+    }
+  }
+  .active {
+    color: $gray-700 !important;
+  }
+  .nav-item {
+    background-color: unset !important;
+    color: $gray-500;
+  }
+  .dropdown {
+    visibility: hidden;
+  }
+  .pgn__tab_invisible {
+    visibility: unset;
+    left: unset;
+  }
+  .pgn__tab_more {
+    display: none;
+  }
+}
+
+.course-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  gap: 24px;
+}
+.scroll-courses-container {
+  .scroll-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    .pgn__card {
+      margin-right: unset;
+    }
+  }
+}
+.skeleton-wrapper {
+  min-width: 300px;
+  z-index: 20;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid $light-400;
+  .react-loading-skeleton {
+    line-height: unset;
+  }
+  .skeleton-logo {
+    position: absolute;
+    top: 42px;
+    left: 24px;
+    width: 116px;
+    height: 66px;
+    background-color: $white;
+    box-shadow: $card-ing-shadow;
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1350px) {
+  .course-container {
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+  }
+}
+@media (max-width: 1024px) {
+  .course-container {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+  .explore-courses-container {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+  }
+  .nav-tabs {
+    margin-bottom: 24px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-container {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+  .nav-tabs {
+    justify-content: unset;
+  }
+  .explorer-title {
+    justify-content: unset !important;
+  }
+}
+@media (max-width: 600px) {
+  .course-container {
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+  }
+  .view-all-courses-btn {
+    width: 100%;
+  }
+}

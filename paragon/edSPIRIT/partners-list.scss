@@ -1,0 +1,206 @@
+.partners-header {
+  background: $background-dark-blue;
+  h1 {
+    color: $white;
+  }
+  .partners-search {
+    @include custom-search-field(354px);
+  }
+  .banner-icons-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    .pgn__icon {
+      height: unset;
+      width: 36px;
+    }
+    .icon-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: $light-500;
+      padding: 1rem;
+    }
+    span {
+      font-weight: bold;
+    }
+    p {
+      font-size: $font-size-base-sm;
+      text-align: center;
+      max-width: 300px;
+      color: $light-500;
+      min-height: 48px;
+      line-height: 24px;
+    }
+  }
+}
+.icons-view-wrapper {
+  .icon-view {
+    .active {
+      background: $brand-500;
+      svg {
+        color: $white;
+      }
+    }
+    .pgn__icon {
+      cursor: pointer;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      color: $gray-500;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+.partners-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0px, 1fr));
+  gap: 24px;
+  .partner-grid-name {
+    @include line-break(1);
+  }
+  .partner-desc {
+    @include line-break(2);
+    display: none;
+  }
+  .pgn__card {
+    display: flex;
+    height: 100%;
+  }
+  .pgn__card-wrapper-image-cap {
+    height: 145px;
+    padding: 8px;
+  }
+  .pgn__card-image-cap {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .pgn__card-section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    background-color: $light-200;
+  }
+}
+.icons-partner-wrapper {
+  margin-top: auto;
+  color: $gray-500;
+  font-size: $font-size-base-sm;
+  line-height: 27px;
+  .pgn__icon {
+    opacity: 0.5;
+    height: unset;
+    width: 16px;
+  }
+}
+.partners-list-wrapper {
+  border: 1px solid transparent;
+  display: grid;
+  gap: 16px;
+  .pgn__card-wrapper-image-cap {
+    width: 304px;
+    height: 192px;
+    padding: 1rem;
+    flex-shrink: 0;
+  }
+  .pgn__card-image-cap {
+    width: 100% !important;
+    height: 100%;
+    border-top-left-radius: unset !important;
+    border-bottom-left-radius: unset !important;
+  }
+  .pgn__card-wrapper-image-cap.horizontal {
+    max-width: unset;
+  }
+  .pgn__card-section {
+    height: 100%;
+    padding: 24px 24px 20px 24px;
+    background-color: $light-200;
+    display: flex;
+    flex-direction: column;
+  }
+  .partner-name-wrapper {
+    @extend .d-flex, .justify-content-between, .align-items-center;
+    height: 36px;
+  }
+  p {
+    @include line-break(2);
+  }
+  .pgn__card {
+    display: flex;
+    border: 1px solid $light-300;
+    &:hover {
+      box-shadow: unset;
+      cursor: pointer;
+      border: 1px solid $light-400;
+      .arrow-forward-btn {
+        display: flex;
+      }
+    }
+  }
+}
+@media (max-width: 1450px) {
+  .partners-grid-wrapper {
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+  }
+}
+
+@media (max-width: 1162px) {
+  .partners-grid-wrapper {
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .partners-grid-wrapper {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-grid-wrapper {
+    .partner-desc {
+      display: -webkit-box;
+      font-size: $font-size-base-sm;
+    }
+    .pgn__card-wrapper-image-cap{
+      height: 129px;
+      width: 100%;
+    }
+  }
+  .icons-view-wrapper {
+    display: none !important;
+  }
+  .partners-header {
+    padding-top: 32px !important;
+    h1 {
+      font-size: 36px;
+    }
+  }
+  .banner-icons-wrapper {
+    p {
+      max-width: 192px;
+    }
+  }
+  .total-count {
+    font-size: $font-size-base-sm;
+  }
+}
+@media (max-width: 600px) {
+  .partner-breadcrumb {
+    display: none;
+  }
+  .banner-icons-wrapper {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .partners-grid-wrapper {
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+  }
+}

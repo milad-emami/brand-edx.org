@@ -1,0 +1,43 @@
+.overview-email-title {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: $font-size-base-xl;
+  color: $gray-500;
+}
+.avatar-container {
+  margin-top: 80px;
+  .avatar-wrapper {
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  .badge {
+    @extend .d-flex, .align-items-center;
+    line-height: unset;
+    background-color: $primary-400;
+  }
+}
+@media (max-width: 768px) {
+  .avatar-container {
+    margin-top: 24px;
+    .mobile-header {
+      margin-bottom: 10px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .avatar-container {
+    .email-container {
+      max-width: 215px;
+    }
+  }
+}
