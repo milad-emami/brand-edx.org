@@ -117,7 +117,7 @@
             }
           }
           &:checked {
-            background-image: url(../../assets/Form.Checkbox.png);
+            background-image: url(./Form.Checkbox.png);
             border-color: transparent;
           }
           &:checked + div label {
@@ -128,7 +128,7 @@
     }
   }
 }
-[dir='rtl'] {
+[dir="rtl"] {
   .facets-wrapper {
     .dropdown-menu {
       inset: 0px 0px auto auto !important;
